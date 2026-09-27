@@ -1,10 +1,12 @@
 #include <stdio.h>
 
 int main() {
-	const int size = 10;
+	printf("How many numbers do you want to add?\n");
+	int size = 0;
+	scanf("%d", &size);
 	const int* const psize = &size;
 	int num[*psize];
-	printf("Type 10 numbers to find the sum of them.\n");
+	printf("Type the numbers to find the sum.\n");
 	int sum = 0;
 	for(int i = 0; i < *psize; ++i) {
 		scanf("%d", &num[i]);
